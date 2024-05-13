@@ -5,8 +5,8 @@ namespace BreakoutGameLab001
 {
     public partial class Form1 : Form
     {
-        // ¹CÀ¸­±ªO±±¨î¶µ
-        CustomizedPanel gamePanel;
+        // éŠæˆ²é¢æ¿æ§åˆ¶é …
+        BrickGamePanel gamePanel;
         //
         public Form1()
         {
@@ -17,10 +17,10 @@ namespace BreakoutGameLab001
 
         private void InitializeGame()
         {
-            // ²¾°£ ´ú¸Õ¥Î panel2 ±±¨î¶µ
+            // ç§»é™¤ æ¸¬è©¦ç”¨ panel2 æ§åˆ¶é …
             Controls.Remove( panel2 );
             //
-            gamePanel = new CustomizedPanel( panel2.Width, panel2.Height);
+            gamePanel = new BrickGamePanel( panel2.Width, panel2.Height);
             gamePanel.Dock = DockStyle.Fill;
             gamePanel.Location = new Point(0, 61);
             gamePanel.Name = "BrickoutGamePanel";
